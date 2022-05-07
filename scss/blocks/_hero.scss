@@ -1,0 +1,388 @@
+.hero {
+    background-image: url("../../images/hero-back-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50% + top 0);
+    width: 100%;
+    height: 100vh;
+
+
+    &__box {
+        background-image: url("../../images/hero-line.svg"),url("../../images/hero-line-right.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: left 0% top 54% , left 70% top 68%;
+    }
+
+    &__wrappr {
+        padding: 153px 0;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        max-width: 500px;
+        margin-bottom: 40px;
+        
+    }
+
+    &__desc {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        max-width: 405px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        // position: relative;
+    }
+
+    &__bottom {
+        margin-left: 100px;
+        // position: relative;
+    }
+
+    &__button {
+        padding: 14px 39px;
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #FCB72B;
+        border: 3px solid transparent;
+        transition: color 0.5s, background 0.5s;
+        text-decoration: none;
+    }
+
+    &__button:hover {
+        color: #FCB72B;
+        background: #FFFFFF;
+        border: 3px solid #FCB72B;
+    }
+
+    &__button:active {
+        color: #FFFFFF;
+        background: #FCB72B;
+    }
+}
+
+@media only screen and (max-width: 1252px){
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -12% top 53% , left 79% top 66%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1204px){
+    .container {
+        max-width: 1190px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -12% top 49% , left 77% top 62%;
+        }
+
+        &__wrappr {
+            padding-top: 90px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1132px){
+    .container {
+        max-width: 1080px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -12% top 49% , left 87% top 62%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .container {
+        max-width: 950px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -12% top 45% , left 95% top 58%;
+        }
+
+        &__wrappr {
+            padding-top: 50px;
+        }
+
+        &__bottom {
+            margin-left: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .container{
+        max-width: 850px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -18% top 45% , left 95% top 58%;
+        }
+
+        &__heading {
+            margin-bottom: 20px;
+        }
+
+        &__desc {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 863px){ 
+    .container {
+        max-width: 750px;
+    }
+
+    .hero{
+        &__wrappr {
+            padding-top: 20px;
+        }
+
+        &__heading {
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            max-width: 250px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 830px){ 
+    .container {
+        max-width: 720px;
+    }
+
+    .hero {
+
+        &__box {
+            background-position: left -80% top 45% , left -50% top 64%;
+        }
+
+        &__wrappr {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            max-width: 573px;
+            text-align: center;
+        }
+
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 0px;
+        }
+
+        &__desc {
+            text-align: center;
+            max-width: 573px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){ 
+    .container {
+        max-width: 690px;
+    }
+
+    .hero {
+        background-image: url("../../images/hero-back-tablet.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -2;
+
+        &__box {
+            background-image: url("../../images/hero-line-tablet.svg");
+            background-repeat: no-repeat;
+            background-position: left -10% top 100%;
+        }
+
+        &__heading {
+            max-width: 573px;
+            margin-top: 80px;
+            margin-bottom: 24px;
+            font-size: 56px;
+        }
+
+        &__desc {
+            max-width: 573px;
+            margin-bottom: 32px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 680px){ 
+    .container {
+        max-width: 600px;
+    }
+
+    .hero {
+        &__heading {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 638px){ 
+    .container {
+        max-width: 550px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -30% top 100%;
+        }
+
+        &__heading {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .container {
+        max-width: 520px;
+    }
+
+    .hero {
+        &__box {
+            background-position: left -80% top 90%;
+        }
+
+        &__heading {
+            font-size: 50px;
+            margin-top: 0;
+        }
+
+        &__desc {
+            font-size: 14px;
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .hero {
+        &__box {
+            background-position: left -100% top 80%;
+        }
+
+        &__wrappr {
+            padding-top: 10px;
+        }
+
+        &__heading {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        &__desc {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 466px){
+    .hero {
+        &__box {
+            background-position: left -160% top 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 466px){
+    .hero {
+        &__box {
+            background-image: url("");
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .hero {
+        &__heading {
+            line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .container {
+        max-width: 315px;
+    }
+
+    .hero {
+        background-image: url("../../images/hero-back-mobil.png");
+        background-repeat: no-repeat;
+
+        &__box {
+            background-image: url("../../images/hero-line-mobile.svg");
+            background-repeat: no-repeat;
+            background-position: left 0% top 88%;
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.78571px;
+            font-weight: 700;
+            margin-top: 70px;
+            margin-bottom: 24px;
+            max-width: 311px;
+        }
+
+        &__desc {
+            margin-bottom: 34px;
+            max-width: 311px;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .hero {
+
+        &__heading {
+            margin-top: 10px;
+        }
+    }
+}
+
